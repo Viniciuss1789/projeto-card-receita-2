@@ -1,0 +1,115 @@
+/* 1. ESTILOS GERAIS PARA A PÁGINA */
+
+/* Idênticos ao projeto anterior, apenas para criar um "palco" para o nosso card. */
+:root {
+    --color-fundo: #FFCF9E;
+    --color-tittle: #2E0000;
+    --color-card: #fff;
+    --color-text: #6E1F1F;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    /* Uma fonte um pouco mais elegante para receitas */
+    background-color: var(--color-fundo);
+    color: var(--color-tittle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: row;
+}
+
+/* 2. ESTILOS DO CARD DE RECEITA */
+.recipe-card {
+    width: 350px;
+    /* Largura fixa para o nosso card */
+    height: 420px;
+    background-color: var(--color-card);
+    border-radius: 15px;
+    /* Cantos mais arredondados para um visual suave */
+    /* A sombra é um pouco mais sutil aqui */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* A MÁGICA PARA CANTOS ARREDONDADOS NA IMAGEM:
+     * Esta propriedade "corta" qualquer conteúdo filho (como a nossa imagem)
+     * que tente "vazar" para fora dos cantos arredondados do card.
+     */
+    overflow: hidden;
+}
+
+/* 3. ESTILOS DA IMAGEM - NOSSO FOCO PRINCIPAL */
+.recipe-image {
+    /* FAZ A IMAGEM SER RESPONSIVA AO SEU CONTAINER:
+     * A imagem ocupará 100% da largura do seu elemento pai (o .recipe-card).
+     * Sua altura se ajustará automaticamente para manter a proporção.
+     */
+    width: 100%;
+    height: 55%;
+    /* Garante que o navegador renderize a imagem como um bloco, removendo
+     * pequenos espaços que podem aparecer abaixo dela. É uma boa prática.
+     */
+    display: block;
+    object-fit: cover;
+}
+
+/* 4. ESTILOS PARA O CONTEÚDO DE TEXTO */
+.recipe-content {
+    /* Usamos o padding aqui para dar um respiro INTERNO para todo o texto,
+     * afastando-o das bordas do card.
+     */
+    padding: 25px;
+}
+
+.recipe-title {
+    font-size: 1.5rem;
+    /* 24px */
+    color: var(--color-tittle);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recipe-description {
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5;
+    /* Espaçamento entre as linhas do parágrafo */
+    color: var(--color-text);
+    margin-bottom: 0;
+    /* Remove a margem de baixo do último elemento */
+
+}
+
+.recipe-card_2 {
+    width: 350px;
+    height: 420px;
+    background-color: var(--color-card);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.recipe-image_2 {
+    width: 100%;
+    height: 55%;
+    display: block;
+    object-fit: cover;
+}
+
+.recipe-content_2 {
+    padding: 25px;
+}
+
+.recipe-title_2 {
+    font-size: 1.5rem;
+    color: var(--color-tittle);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recipe-description_2 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    margin-bottom: 0;
+}
