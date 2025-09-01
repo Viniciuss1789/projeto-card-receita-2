@@ -15,10 +15,10 @@ body {
     color: var(--color-tittle);
     display: flex;
     justify-content: center;
+    gap: 50px;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    flex-direction: row;
 }
 
 /* 2. ESTILOS DO CARD DE RECEITA */
@@ -28,6 +28,7 @@ body {
     height: 420px;
     background-color: var(--color-card);
     border-radius: 15px;
+    border: solid 3px var(--color-text);
     /* Cantos mais arredondados para um visual suave */
     /* A sombra é um pouco mais sutil aqui */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -85,6 +86,7 @@ body {
     height: 420px;
     background-color: var(--color-card);
     border-radius: 20px;
+    border: solid 3px var(--color-text);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
